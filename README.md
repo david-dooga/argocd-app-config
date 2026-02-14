@@ -1,7 +1,7 @@
 # 🗳️ EKS Microservices: The GitOps Standard
 ### Multi-Tier Orchestration with Terraform & ArgoCD
 
-[![AWS EKS](Images/resultUI.png)](https://aws.amazon.com)
+[![AWS EKS](Images/eks-logo1.png)](https://aws.amazon.com)
 [![Terraform](https://img.shields.io)](https://www.terraform.io)
 [![ArgoCD](https://img.shields.io)](https://argoproj.github.io)
 
