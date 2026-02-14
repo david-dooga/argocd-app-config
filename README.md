@@ -1,7 +1,7 @@
 # 🗳️ EKS Microservices: The GitOps Standard
-### Multi-Tier Orchestration with Terraform v21.x & ArgoCD
+### Multi-Tier Orchestration with Terraform & ArgoCD
 
-[![AWS EKS](https://img.shields.io)](https://aws.amazon.com)
+[![AWS EKS](Images/resultUI.png)](https://aws.amazon.com)
 [![Terraform](https://img.shields.io)](https://www.terraform.io)
 [![ArgoCD](https://img.shields.io)](https://argoproj.github.io)
 
@@ -18,7 +18,7 @@ This project represents a production-ready transition from manual `eksctl` deplo
 </p>
 
 ### 🛠️ Infrastructure Core (Terraform)
-The foundation is built on **Terraform v21.x**, utilizing modular HCL to provision:
+The foundation is built on **Terraform**, utilizing modular HCL to provision:
 *   **Isolated VPC:** 3 Public Subnets (NAT/IGW) and 3 **Private Subnets** (EKS Nodes).
 *   **Security Posture:** Zero-trust Network ACLs and Security Groups. Nodes have **No Public IPs**.
 *   **Modern Auth:** Leverages the **EKS Pod Identity Agent** (the new AWS standard) for granular IAM-to-Pod mapping, replacing legacy OIDC/IRSA.
