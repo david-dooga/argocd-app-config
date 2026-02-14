@@ -12,7 +12,7 @@ This project represents a production-ready transition from manual `eksctl` deplo
 ## 🏗️ System Architecture
 
 <p align="center">
-  <img src="argocdUI.png" width="900" alt="ArgoCD Graph View">
+  <img src="Images/argocdUI.png" width="900" alt="ArgoCD Graph View">
   <br>
   <em>Figure 1: ArgoCD Real-time synchronization of the Microservices Tree.</em>
 </p>
@@ -50,9 +50,9 @@ We utilize **ArgoCD** for Continuous Deployment. The cluster's state is strictly
 3.  **Reconciliation:** ArgoCD applies changes and performs a **Self-Heal** if manual drift is detected.
 
 <p align="center">
-  <img src="terraformplan.png" width="450" alt="Terraform Plan Output">
-  <img src="voteUI.png" width="450" alt="Vote App UI">
-  <img src="resultUI.png" width="450" alt="Result App UI UI">
+  <img src="Images/terraformplan.png" width="450" alt="Terraform Plan Output">
+  <img src="Images/voteUI.png" width="450" alt="Vote App UI">
+  <img src="Images/resultUI.png" width="450" alt="Result App UI UI">
 </p>
 
 ---
