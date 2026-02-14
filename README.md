@@ -34,8 +34,8 @@ The foundation is built on **Terraform v21.x**, utilizing modular HCL to provisi
 
 | Service | Language/Stack | Role | Access Type |
 | :--- | :--- | :--- | :--- |
-| **Vote** | Python / Flask | User Interface | `NodePort` |
-| **Result** | Node.js | Real-time Dashboard | `NodePort` |
+| **Vote** | Python / Flask | User Interface | `Loadbalancer` |
+| **Result** | Node.js | Real-time Dashboard | `Loadbalancer` |
 | **Worker** | .NET Core | Task Processing | Internal Only |
 | **Redis** | In-memory | Message Broker | Internal Only |
 | **Database** | PostgreSQL 18 | Persistent Storage | **StatefulSet** |
@@ -59,10 +59,10 @@ We utilize **ArgoCD** for Continuous Deployment. The cluster's state is strictly
 ## 🚦 How to Deploy
 
 ### 1. Provision Infrastructure
-Refer to the [Terraform Repository](https://github.com) to build the VPC and Cluster.
+Refer to the [Terraform Repository](https://github.com/hashicorp/terraform ) to build the VPC and Cluster.
 
 ### 2. Bootstrap ArgoCD
 ```bash
 kubectl create namespace argocd
-kubectl apply -n argocd -f https://raw.githubusercontent.com
+kubectl apply -n argocd -f application.yaml
 
