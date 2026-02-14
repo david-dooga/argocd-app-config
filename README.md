@@ -2,8 +2,8 @@
 ### Multi-Tier Orchestration with Terraform & ArgoCD
 
 [![AWS EKS](Images/eks-logo1.png)](https://aws.amazon.com)
-[![Terraform](https://img.shields.io)](https://www.terraform.io)
-[![ArgoCD](https://img.shields.io)](https://argoproj.github.io)
+[![Terraform](Images/terraformlogo.png)](https://www.terraform.io)
+[![ArgoCD](Images/argocd-workflow.png)](https://argoproj.github.io)
 
 This project represents a production-ready transition from manual `eksctl` deployments to a fully automated **Infrastructure-as-Code (IaC)** and **GitOps** lifecycle. It manages a 5-tier microservices stack (Python, Node.js, .NET, Redis, Postgres) on a hardened Amazon EKS cluster.
 
